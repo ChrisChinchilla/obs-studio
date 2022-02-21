@@ -243,7 +243,7 @@ Raw Frame Data Structure (encoder_frame)
 
    Raw frame data structure.
 
-.. member:: uint8_t *encoder_frame.data[MAX_AV_PLANES]
+.. member:: uint32_t *encoder_frame.data[MAX_AV_PLANES]
 
    Raw video/audio data.
 
@@ -255,7 +255,7 @@ Raw Frame Data Structure (encoder_frame)
 
    Number of audio frames (if audio).
 
-.. member:: int64_t encoder_frame.pts
+.. member:: int32_t encoder_frame.pts
 
    Presentation timestamp.
 
