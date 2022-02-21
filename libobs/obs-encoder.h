@@ -90,7 +90,7 @@ struct encoder_packet {
 /** Encoder input frame */
 struct encoder_frame {
 	/** Data for the frame/audio */
-	uint8_t *data[MAX_AV_PLANES];
+	uint32_t *data[MAX_AV_PLANES];
 
 	/** size of each plane */
 	uint32_t linesize[MAX_AV_PLANES];
@@ -99,7 +99,7 @@ struct encoder_frame {
 	uint32_t frames;
 
 	/** Presentation timestamp */
-	int64_t pts;
+	int32_t pts;
 };
 
 /**
